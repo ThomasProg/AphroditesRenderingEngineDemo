@@ -1,0 +1,9 @@
+[submodule "ThirdParties/AphroditesRenderingEngine"]
+	path = ThirdParties/AphroditesRenderingEngine
+	url = https://github.com/ThomasProg/AphroditesRenderingEngine.git
+[submodule "ThirdParties/assimp"]
+	path = ThirdParties/assimp
+	url = https://github.com/assimp/assimp.git
+[submodule "ThirdParties/glfw"]
+	path = ThirdParties/glfw
+	url = https://github.com/glfw/glfw.git
