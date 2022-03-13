@@ -59,10 +59,46 @@ int main()
         if (scene == nullptr)
             std::cout << "Scene could not be loaded" << std::endl;
 
-        ARE::Context context; 
 
-        glm::mat4 m{};
-        std::cout << "Length : " << m.length() << std::endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ARE::VulkanContextCreateInfo createInfo;
+        createInfo.appName = "Aphrodite's Rendering Engine Demo";
+        createInfo.appVersion = VK_MAKE_VERSION(1,0,0);
+
+        uint32_t nbExtensions;
+        const char** extensionsName = glfwGetRequiredInstanceExtensions(&nbExtensions);
+        createInfo.requiredExtensions = std::vector<const char*>(extensionsName, extensionsName + nbExtensions);
+
+        ARE::Context context = ARE::Context(createInfo); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         while (!glfwWindowShouldClose(window))
         {
