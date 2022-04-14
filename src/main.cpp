@@ -81,6 +81,9 @@ int main()
         const char** extensionsName = glfwGetRequiredInstanceExtensions(&nbExtensions);
         createInfo.requiredExtensions = std::vector<const char*>(extensionsName, extensionsName + nbExtensions);
 
+        ARE::VulkanContextDebugCreationInfo debugInfo;
+        createInfo.debugInfo = &debugInfo;
+
         ARE::Context context = ARE::Context(createInfo); 
 
 
