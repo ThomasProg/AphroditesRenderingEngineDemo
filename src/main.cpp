@@ -83,9 +83,13 @@ int main()
 
         ARE::VulkanContextDebugCreationInfo debugInfo;
         createInfo.debugInfo = &debugInfo;
-
+        try {
         ARE::Context context = ARE::Context(createInfo); 
-
+        }
+        catch(std::exception e)
+        {
+            std::cout << e.what() << std::endl;
+        }
 
 
 
